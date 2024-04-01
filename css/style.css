@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #A7BFE8;  
+}
+
+.navbar, footer {
+    background-color: #A7BFE8;  
+}
+
+.nav-link, .navbar-brand {
+    color: black;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2B5876;  
+}
+
+.btn, .navbar-toggler {
+    background-color: #2B5876;  
+}
+.img{
+    height: 100px;
+    width: 100px;
+}
+.carousel-item img {
+    width: 100px; /* Ajusta el ancho al 100% del contenedor */
+    height: 700px; /* Mantiene la proporción de aspecto original */
+  }

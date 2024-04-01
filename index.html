@@ -13,59 +13,81 @@
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
-    <link href="/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/images/Logo.png" alt="Netwerkprotocollen" width="100" height="100">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Diensten</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-            <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
-          </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Diensten</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+                
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+                <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+            </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    
+        
+    <div class="container">
+        <div class="row">    
+            <main class="col-md-9 pe-3">
+                <section id="indexintro" class="row">
+                    <article class="col mb-5">
+                        <h1 class="col-display-2 text-center">Netwerkprotocollen en Standaarden</h1>
+                    </article>
+                    <section class="card mb-3" style="max-width: 540px;">
+                        <article class="row g-0">
+                          <section class="col-md-4">
+                            <img src="/assests/images/fotoik.jpg" class="img-fluid rounded-start" alt="fotoik">
+                          </section>
+                          <section class="col-md-8">
+                            <article class="card-body">
+                              <h5 class="card-title">Over mij</h5>
+                              <p class="card-text">Als student Systeem- en Netwerkbeheer heb ik een diepe interesse in alles wat met computernetwerken te maken heeft. Dit is dan ook de reden dat ik voor deze studierichting heb gekozen. Op deze website vindt u de fundamenten van computernetwerken, gepresenteerd als een basis waarop verdere kennis opgebouwd kan worden. Ik hoop dat u de aangeboden inhoud nuttig vindt en dat het dient als een hulpmiddel of ondersteuning in uw studies.</p>
+                            </article>
+                          </section>
+                        </article>
+                      </section>
+                      
+                    
+                </section>
+            </main>
+            <aside>
+                <!-- Contenido lateral aquí, como una barra lateral o widgets -->
+                <h2>Betrouwbaarheid</h2>
+                <p>Informatie over betrouwbaarheid...</p>
+            </aside>
         </div>
-      </div>
-    </nav>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/images/allinone.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/header1.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/laptop.webp" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </div>
+        <!-- Puedes añadir más sections o articles como sea necesario -->
+    
+
+    <footer class="text-center mt-4">
+        <!-- Tu footer aquí -->
+        <p>Contactgegevens en sociale media iconen...</p>
+    </footer>
+
 </body>
 </html>
