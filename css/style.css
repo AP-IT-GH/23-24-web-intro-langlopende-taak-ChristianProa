@@ -22,7 +22,3 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
     width: 100px;
 }
-.carousel-item img {
-    width: 100px; /* Ajusta el ancho al 100% del contenedor */
-    height: 700px; /* Mantiene la proporción de aspecto original */
-  }
