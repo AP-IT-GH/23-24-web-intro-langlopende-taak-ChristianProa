@@ -22,3 +22,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 100px;
     width: 100px;
 }
+ul {
+    list-style-type: disc; /* Voegt zwarte bolletjes toe aan de lijst */
+}
+.table th, .table caption {
+    font-weight: bold; /* Maakt tekst in tabelkoppen en bijschrift vet */
+}
+.table td:first-child, .table th:first-child {
+    border-right: 1px solid #dee2e6; /* Voegt een lijn toe aan de rechterkant van de eerste kolom */
+    font-weight: bold; /* Maakt tekst in de eerste kolom vet */
+}
