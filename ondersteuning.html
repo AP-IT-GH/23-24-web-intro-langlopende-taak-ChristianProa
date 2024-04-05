@@ -1,11 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diensten</title>
+    <!-- reset jouw css -->
+    <link href="./css/reset.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="/css/style.css" rel="stylesheet">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="diensten.html">Diensten</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Protocollen
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/beveiliging.html">Netwerkbeveiligingsanalyse</a></li>
+                      <li><a class="dropdown-item" href="/prestatie.html">Netwerkprestatieoptimalisatie</a></li>
+                      <li><a class="dropdown-item" href="/netwerkontwerp.html">Netwerkontwerp en implementatie</a></li>
+                      <li><a class="dropdown-item" href="/cloud.html">Cloud-based netwerkbeheer</a></li>
+                      <li><a class="dropdown-item" href="/ondersteuning.html">24/7 netwerkondersteuning</a></li>
+                      <li><a class="dropdown-item" href="/iot.html">IoT-netwerkbeveiliging</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+                
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+                <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+            </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="row">    
+            <main class="col-md-9 pe-3">
+                <h1 class="col-display-2 text-center ">24/7 Netwerkondersteuning</h1>
+                <figure class="text-center">
+                    <img src="/assests/images/service.png" class="img-fluid" alt="Team van technici">
+                    <figcaption>Afbeelding: Team van technici in actie</figcaption>
+                </figure>
+                <h2 class="text-center h4">Altijd Beschikbaar, Altijd Betrouwbaar</h2>
+                <p>In de non-stop wereld van vandaag is de continuïteit van uw netwerk cruciaal voor de bedrijfsvoering. Onze 24/7 netwerkondersteuningsdienst zorgt ervoor dat uw netwerk altijd functioneert, ongeacht het tijdstip of de dag. Ons team van deskundige technici staat klaar om u te assisteren bij alle netwerkgerelateerde uitdagingen. Of het nu gaat om het oplossen van eenvoudige configuratieproblemen of het aanpakken van complexe netwerkstoringen, wij bieden de steun die u nodig heeft om uw netwerk operationeel en efficiënt te houden.</p>
+                <ul>
+                    <li>Directe assistentie: Snelle respons op uw vragen en problemen, op elk moment van de dag.</li>
+                    <li>Probleemoplossing op afstand: Efficiënte diagnose en oplossing van problemen via remote toegang, waardoor downtime wordt geminimaliseerd.</li>
+                    <li>Preventief onderhoud: Regelmatige controles en updates om de gezondheid van uw netwerk te waarborgen en potentiële problemen voor te zijn.</li>
+                    <li>Aangepaste adviezen: Op maat gemaakte aanbevelingen om uw netwerk te optimaliseren en toekomstige problemen te voorkomen.</li>
+                </ul>
+                <table class="table">
+                    <caption>Belang van 24/7 Netwerkondersteuning</caption>
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Beschrijving</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beschikbaarheid</td>
+                            <td>Zorgt ervoor dat uw netwerk altijd toegankelijk is voor uw medewerkers en klanten.</td>
+                        </tr>
+                        <tr>
+                            <td>Veiligheid</td>
+                            <td>Biedt continue bewaking tegen beveiligingsdreigingen en snelle reactie bij incidenten.</td>
+                        </tr>
+                        <tr>
+                            <td>Prestatie</td>
+                            <td>Houdt de prestaties van uw netwerk op het hoogste niveau door constante monitoring en optimalisatie.</td>
+                        </tr>
+                        <tr>
+                            <td>Gemoedsrust</td>
+                            <td>Geeft u de zekerheid dat uw netwerk in goede handen is, zodat u zich kunt focussen op uw bedrijf.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Kaart met markering -->
+                <!-- Leaflet Map -->
+    <div id="mapid" style="height: 450px;"></div>
+    <script>
+        var map = L.map('mapid').setView([51.2194, 4.4025], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        var marker = L.marker([51.2194, 4.4025]).addTo(map);
+        marker.bindPopup("<b>Onze locatie</b>").openPopup();
+    </script>
+
+
+            </main>
+        
+   
+    
+      
+    
+    
+
+
+
+      <aside class="col-md-3 border-start ps-5">
+        <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
+        <p>Protocollen<br>
+          email <a href="mailto:mail@protocollen.be">mail@protocollen.be</a><br>
+          phone +32 0486 / 86 27 41</p>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="bi bi-youtube fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      </div>
+    </div>
+      
+    <hr class="container">  
+    
+
+    <footer class="container">
+        <section class="row justify-content-center">
+            <nav class="col-md-3 mb-3">
+            <h5 class="text-uppercase text-center">Website Map</h5>
+            <ul class="list-unstyled text-center">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Diensten</a></li>
+                <li><a href="#!">Protocollen</a></li>
+                <li><a href="#!">Contact</a></li>
+            </ul>
+            </nav>
+        </section>
+        </footer>
     
 </body>
 </html>
