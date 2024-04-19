@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl-BE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IP Address</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Agregar Leaflet CSS y JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+      #map { /* Estilo para el contenedor del mapa */
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1" cellpadding="5">
+      <tr>
+        <td>IP Address</td>
+        <td id="ip"></td>
+      </tr>
+      <tr>
+        <td>ISP</td>
+        <td id="isp"></td>
+      </tr>
+      <tr>
+        <td>Country</td>
+        <td id="country"></td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td id="city"></td>
+      </tr>
+      <tr>
+        <td>Leaflet Map</td>
+        <td id="map"></td>
+      </tr>
+    </table>
+
+    <script type="text/javascript">
+      $.getJSON('https://ipapi.co/json/', function(data){
+        $("#ip").text(data.ip);
+        $('#isp').text(data.org);
+        $('#country').text(data.country_name);
+        $('#city').text(data.region);
+
+        // Inicializar mapa Leaflet
+        var map = L.map('map').setView([data.latitude, data.longitude], 13);
+
+        // Agregar capa de mapa base de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Agregar marcador en la ubicación
+        L.marker([data.latitude, data.longitude]).addTo(map)
+          .bindPopup('Your Location')
+          .openPopup();
+      });
+    </script>
+  </body>
+</html>
