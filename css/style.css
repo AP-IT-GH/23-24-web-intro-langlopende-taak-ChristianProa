@@ -1,26 +1,27 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #A7BFE8;  
+    font-family: 'Roboto', sans-serif;  /* Gebruikt het 'Roboto' lettertype voor de tekst in de body */
+    background-color: #A7BFE8;  /* Stelt een lichtblauwe achtergrondkleur in voor de body */
+}
 }
 
 .navbar, footer {
-    background-color: #A7BFE8;  
+    background-color: #A7BFE8;  /* Stelt dezelfde lichtblauwe achtergrondkleur in voor de navigatiebalk en voettekst */
 }
 
 .nav-link, .navbar-brand {
-    color: black;  
+    color: black;  /* Zet de tekstkleur van navigatielinks en het merklogo op zwart */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #2B5876;  
+    color: #2B5876;  /* Stelt een donkerblauwe kleur in voor alle koppen (h1 tot h6) */
 }
 
 .btn, .navbar-toggler {
-    background-color: #2B5876;  
+    background-color: #2B5876;  /* Geeft knoppen en de navbar-toeschakelaar een donkerblauwe achtergrondkleur */
 }
 .img{
-    height: 100px;
-    width: 100px;
+    height: 100px; /* Stelt een hoogte van 100 pixels in voor afbeeldingen */
+    width: 100px; /* Stelt een breedte van 100 pixels in voor afbeeldingen */
 }
 ul {
     list-style-type: disc; /* Voegt zwarte bolletjes toe aan de lijst */
