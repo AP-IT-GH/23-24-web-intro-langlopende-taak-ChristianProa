@@ -71,60 +71,32 @@
             <main class="col-md-9 pe-3">
                 <h2>Contactformulieren</h2>
                 <p>Vul alstublieft het relevante contactformulier in om contact op te nemen met de admin of de webdesigner.</p>
-            
-                <!-- Contactformulier voor de Admin -->
+            <!-- Contactformulier voor de Admin en Webdesigner -->
                 <div class="mb-5">
-                    <h3>Contactformulier Admin</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="adminNaam" class="form-label">Naam</label>
-                            <input type="text" class="form-control" id="adminNaam" placeholder="Uw naam">
-                        </div>
-                        <div class="mb-3">
-                            <label for="adminEmail" class="form-label">Emailadres</label>
-                            <input type="email" class="form-control" id="adminEmail" placeholder="naam@voorbeeld.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="adminBericht" class="form-label">Bericht</label>
-                            <textarea class="form-control" id="adminBericht" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Verstuur</button>
-                    </form>
-                </div>
-            
-                <!-- Contactformulier voor de Webdesigner -->
-                <div class="mb-5">
-                    <h3>Contactformulier Webdesigner</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="designerNaam" class="form-label">Naam</label>
-                            <input type="text" class="form-control" id="designerNaam" placeholder="Uw naam">
-                        </div>
-                        <div class="mb-3">
-                            <label for="designerEmail" class="form-label">Emailadres</label>
-                            <input type="email" class="form-control" id="designerEmail" placeholder="naam@voorbeeld.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="designerBericht" class="form-label">Bericht</label>
-                            <textarea class="form-control" id="designerBericht" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Verstuur</button>
-                    </form>
-                </div>
-            
-                <!-- Kaart met markering -->
-                <!-- Leaflet Map -->
-    <div id="mapid" style="height: 450px;"></div>
-    <script>
-        var map = L.map('mapid').setView([51.2194, 4.4025], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-        var marker = L.marker([51.2194, 4.4025]).addTo(map);
-        marker.bindPopup("<b>Onze locatie</b>").openPopup();
-    </script>
-            
+                  <h3>Contactformulier</h3>
+                  <form>
+                      <div class="mb-3">
+                          <label for="contactType" class="form-label">Contact Type</label>
+                          <select class="form-select" id="contactType">
+                              <option value="admin">Admin</option>
+                              <option value="webdesigner">Webdesigner</option>
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                          <label for="naam" class="form-label">Naam</label>
+                          <input type="text" class="form-control" id="naam" placeholder="Uw naam">
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Emailadres</label>
+                          <input type="email" class="form-control" id="email" placeholder="naam@voorbeeld.com">
+                      </div>
+                      <div class="mb-3">
+                          <label for="bericht" class="form-label">Bericht</label>
+                          <textarea class="form-control" id="bericht" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Verstuur</button>
+                  </form>
+              </div>
             </main>
    
     

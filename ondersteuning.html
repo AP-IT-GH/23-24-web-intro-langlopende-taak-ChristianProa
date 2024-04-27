@@ -109,21 +109,7 @@
                         </tr>
                     </tbody>
                 </table>
-
-                <!-- Kaart met markering -->
-                <!-- Leaflet Map -->
-    <div id="mapid" style="height: 450px;"></div>
-    <script>
-        var map = L.map('mapid').setView([51.2194, 4.4025], 13);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-        var marker = L.marker([51.2194, 4.4025]).addTo(map);
-        marker.bindPopup("<b>Onze locatie</b>").openPopup();
-    </script>
-
-
+                
             </main>
         
    
