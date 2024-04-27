@@ -21,24 +21,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 </head>
 <body>
+    <!-- Hoofdheader met navigatiebalk -->
     <header>
+        <!-- Navigatiebalk, responsive voor middelgrote apparaten -->
         <nav class="navbar navbar-expand-md bg-light">
             <div class="container-fluid">
+            <!-- Logo en link naar de hoofdpagina -->
             <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100" height="100">
             </a>
+            !-- Knop voor uitklapbaar menu op mobiele apparaten -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+            <!-- Uitklapbare inhoud voor navigatie -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Link naar de startpagina -->
                 <li class="nav-item">
                     <a class="nav-link" href="/index.html">Home</a>
                 </li>
+                <!-- Link naar de dienstenpagina -->
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="diensten.html">Diensten</a>
                 </li>
+                <!-- Dropdown menu voor verschillende protocollen -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Protocollen
@@ -52,11 +59,12 @@
                       <li><a class="dropdown-item" href="/iot.html">IoT-netwerkbeveiliging</a></li>
                     </ul>
                   </li>
+                <!-- Link naar de contactpagina -->
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 </ul>
-                
+            <!-- Zoekfunctie in de navigatiebalk -->   
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
                 <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
@@ -65,9 +73,10 @@
             </div>
         </nav>
     </header>
-    
+    <!-- Hoofdinhoud container -->
     <div class="container">
-        <div class="row">    
+        <div class="row">
+            <!-- Hoofdsectie van de pagina -->    
             <main class="col-md-9 pe-3">
                 <h1 class="col-display-2 text-center ">24/7 Netwerkondersteuning</h1>
                 <figure class="text-center">
@@ -76,12 +85,14 @@
                 </figure>
                 <h2 class="text-center h4">Altijd Beschikbaar, Altijd Betrouwbaar</h2>
                 <p>In de non-stop wereld van vandaag is de continuïteit van uw netwerk cruciaal voor de bedrijfsvoering. Onze 24/7 netwerkondersteuningsdienst zorgt ervoor dat uw netwerk altijd functioneert, ongeacht het tijdstip of de dag. Ons team van deskundige technici staat klaar om u te assisteren bij alle netwerkgerelateerde uitdagingen. Of het nu gaat om het oplossen van eenvoudige configuratieproblemen of het aanpakken van complexe netwerkstoringen, wij bieden de steun die u nodig heeft om uw netwerk operationeel en efficiënt te houden.</p>
+                <!-- Lijst met diensten en functies -->
                 <ul>
                     <li>Directe assistentie: Snelle respons op uw vragen en problemen, op elk moment van de dag.</li>
                     <li>Probleemoplossing op afstand: Efficiënte diagnose en oplossing van problemen via remote toegang, waardoor downtime wordt geminimaliseerd.</li>
                     <li>Preventief onderhoud: Regelmatige controles en updates om de gezondheid van uw netwerk te waarborgen en potentiële problemen voor te zijn.</li>
                     <li>Aangepaste adviezen: Op maat gemaakte aanbevelingen om uw netwerk te optimaliseren en toekomstige problemen te voorkomen.</li>
                 </ul>
+                <!-- Tabel met voordelen van 24/7 ondersteuning -->
                 <table class="table">
                     <caption>Belang van 24/7 Netwerkondersteuning</caption>
                     <thead>
@@ -109,17 +120,10 @@
                         </tr>
                     </tbody>
                 </table>
-                
+
             </main>
         
-   
-    
-      
-    
-    
-
-
-
+      <!-- Zijbalk voor contactinformatie -->
       <aside class="col-md-3 border-start ps-5">
         <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
         <p>Protocollen<br>
@@ -154,7 +158,7 @@
       
     <hr class="container">  
     
-
+    <!-- Voettekst met site-navigatie -->
     <footer class="container">
         <section class="row justify-content-center">
             <nav class="col-md-3 mb-3">
