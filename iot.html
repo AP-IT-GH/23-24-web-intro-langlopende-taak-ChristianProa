@@ -18,16 +18,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 </head>
 <body>
+    <!-- Navigatieheader -->
     <header>
+        <!-- Navigatiebalk (navbar), responsief voor middelgrote schermen -->
         <nav class="navbar navbar-expand-md bg-light">
             <div class="container-fluid">
+            <!-- Logo en link naar de startpagina -->  
             <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100" height="100">
             </a>
+            <!-- Toggler knop voor het in-/uitklappen van de navigatie op mobiele apparaten -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+            <!-- Navigatie links en zoekbalk binnen een uitklapbaar element -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -36,6 +40,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="diensten.html">Diensten</a>
                 </li>
+                <!-- Dropdown menu voor specifieke diensten gerelateerd aan protocollen -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Protocollen
@@ -53,7 +58,7 @@
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 </ul>
-                
+            <!-- Zoekbalk voor het doorzoeken van de website -->    
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
                 <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
@@ -62,23 +67,27 @@
             </div>
         </nav>
     </header>
-    
+    <!-- Hoofdcontent container -->
     <div class="container">
-        <div class="row">    
+        <div class="row">
+            <!-- Hoofdcontent van de pagina -->    
             <main class="col-md-9 pe-3">
                 <h1 class="col-display-2 text-center">IoT-netwerkbeveiliging</h1>
+                <!-- Afbeelding en onderschrift -->
                 <figure class="text-center">
                     <img src="/assests/images/iot.jpg" class="img-fluid" alt="IoT-apparaat verdedigd tegen cyberaanvallen">
                     <figcaption>Afbeelding: IoT-apparaat verdedigd tegen cyberaanvallen</figcaption>
                 </figure>
                 <h2 class="text-center h4">Uw Schild tegen Cyberdreigingen in de Wereld van IoT</h2>
                 <p>In de steeds groeiende wereld van het Internet of Things (IoT) is de veiligheid van verbonden apparaten een topprioriteit geworden. Met onze gespecialiseerde IoT-netwerkbeveiligingsdienst bieden we robuuste bescherming voor uw IoT-ecosysteem. Van slimme huishoudelijke apparaten tot geavanceerde industriële sensoren, we zorgen ervoor dat elk apparaat veilig is tegen de hedendaagse cyberdreigingen. Onze aanpak omvat uitgebreide beveiligingsanalyses, de implementatie van sterke encryptiemethoden, en de constante monitoring van het netwerkverkeer om mogelijke inbreuken te detecteren en te neutraliseren.</p>
+                <!-- Lijst met diensten -->
                 <ul>
                     <li>Risicoanalyse: Evaluatie van potentiële kwetsbaarheden binnen uw IoT-netwerk.</li>
                     <li>Encryptie: Toepassing van geavanceerde encryptietechnieken om gegevens te beveiligen.</li>
                     <li>Authenticatie: Sterke authenticatieprotocollen om ongeautoriseerde toegang te voorkomen.</li>
                     <li>Regelmatige updates: Implementatie van de nieuwste beveiligingsupdates en patches.</li>
                 </ul>
+                <!-- Tabel met beveiligingsprotocollen -->
                 <table class="table">
                     <caption>Essentiële IoT-Beveiligingsprotocollen</caption>
                     <thead>
@@ -107,17 +116,7 @@
                     </tbody>
                 </table>
             </main>
-   
-    
-        
-   
-    
-      
-    
-    
-
-
-
+      <!-- Zijbalk voor contactinformatie -->
       <aside class="col-md-3 border-start ps-5">
         <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
         <p>Protocollen<br>
@@ -152,7 +151,7 @@
       
     <hr class="container">  
     
-
+    <!-- Footer met navigatielinks en contactinformatie -->
     <footer class="container">
         <section class="row justify-content-center">
             <nav class="col-md-3 mb-3">
