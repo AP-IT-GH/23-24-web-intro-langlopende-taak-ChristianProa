@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;  /* Gebruikt het 'Roboto' lettertype voor de tekst in de body */
     background-color: #A7BFE8;  /* Stelt een lichtblauwe achtergrondkleur in voor de body */
 }
-}
 
 .navbar, footer {
     background-color: #A7BFE8;  /* Stelt dezelfde lichtblauwe achtergrondkleur in voor de navigatiebalk en voettekst */
