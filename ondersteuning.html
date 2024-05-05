@@ -14,12 +14,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="/css/style.css" rel="stylesheet">
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <!-- font roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-</head>
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="./css/mapStyle.css">
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="./js/mapScript.js" defer></script>
+
+  </head>
 <body>
     <!-- Hoofdheader met navigatiebalk -->
     <header>
@@ -120,6 +129,10 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <section id="map"  class="row">
+                  <div id="apMap" class="col-12 mb-3"></div>
+              </section>
 
             </main>
         
