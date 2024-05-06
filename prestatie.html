@@ -16,7 +16,14 @@
     <link href="/css/style.css" rel="stylesheet">
     <!-- font roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-</head>
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="/css/ipzoek.css">
+    <script src="/js/ipzoek.js"></script>
+  </head>
 <body>
     <!-- Kopgedeelte van de pagina inclusief navigatiebalk -->
     <header>
@@ -116,6 +123,36 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <section class="container my-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 class="text-center mb-4">IP Locatiegegevens</h2>
+                      <table class="table table-responsive">
+                        <tr>
+                          <th>IP-adres</th>
+                          <td id="ip"></td>
+                        </tr>
+                        <tr>
+                          <th>ISP</th>
+                          <td id="isp"></td>
+                        </tr>
+                        <tr>
+                          <th>Land</th>
+                          <td id="country"></td>
+                        </tr>
+                        <tr>
+                          <th>Stad</th>
+                          <td id="city"></td>
+                        </tr>
+                        <tr>
+                          <th>Leaflet Kaart</th>
+                          <td id="map" style="height: 400px;"></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
             </main>
       <!-- Sidebar met contactinformatie en sociale media links -->
 

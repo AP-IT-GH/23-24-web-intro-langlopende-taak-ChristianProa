@@ -1,0 +1,40 @@
+.table th, .table td {
+    vertical-align: middle; /* Asegura que el contenido de la tabla esté centrado verticalmente */
+}
+
+.table th {
+    width: 20%; /* Limita el ancho de las columnas de encabezado */
+}
+
+.table td {
+    width: 80%; /* Asigna el ancho restante a las columnas de datos */
+}
+
+#map {
+    height: 400px; /* Establece una altura fija para el mapa */
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto; /* Permite desplazamiento horizontal en dispositivos móviles */
+    }
+}
+.table {
+    border-collapse: separate; /* Necesario para los bordes dobles entre celdas */
+    border-spacing: 2px; /* Ajusta el espaciado para el borde doble */
+    background: #f8f9fa; /* Fondo claro para mejorar el contraste */
+}
+
+.table th, .table td {
+    border: 2px double #000; /* Borde doble para cada celda */
+    padding: 8px; /* Espaciado interno adecuado para el contenido */
+}
+
+.table-responsive {
+    border: 3px double #000; /* Borde doble alrededor de toda la tabla */
+    padding: 2px; /* Espaciado alrededor de la tabla dentro de su contenedor */
+    margin-top: 20px; /* Espacio adicional en la parte superior para estética */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para profundidad */
+}
