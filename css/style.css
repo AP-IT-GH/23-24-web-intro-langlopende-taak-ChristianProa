@@ -55,3 +55,14 @@ ul {
     width: 100%;
     border: none;
   }
+
+  @media (max-width: 768px) {
+    .nav.flex-column {
+        flex-direction: row;
+        overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+        white-space: nowrap; /* Evita que los elementos del menú se apilen verticalmente */
+    }
+    .nav-link {
+        display: inline-block; /* Alinea los enlaces en una sola línea */
+    }
+}
