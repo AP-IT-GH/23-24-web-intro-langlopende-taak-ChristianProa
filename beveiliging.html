@@ -16,7 +16,9 @@
     <link href="/css/style.css" rel="stylesheet">
     <!-- font roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-</head>
+    <link rel="stylesheet" href="/css/password.css">
+    <script src="/js/password.js" defer></script>
+  </head>
 <body>
     <!-- Header sectie bevat navigatie -->
     <header>
@@ -131,6 +133,23 @@
     </article>
     </div>
                 </section>
+
+                <section class="password-generator container">
+                  <article class="col-md-8 mx-auto">
+                      <h1 class="text-center">Password Generator</h1>
+                      <section class="options">
+                          <label for="length" class="form-label">Length:</label>
+                          <input type="number" id="length" class="form-control" min="6" max="30" value="12">
+                          <button id="generate-btn" class="btn btn-primary mt-3">Generate Password</button>
+                      </section>
+                      <section class="password-container mt-4">
+                          <input type="text" id="password" class="form-control" readonly>
+                      </section>
+                  </article> 
+              </section>
+              
+
+
             </main>
 
 <!-- Details zoals email en telefoonnummer -->
