@@ -67,49 +67,21 @@ ul {
     border: none;
   }
 
-  @media (max-width: 768px) {
-    .nav.flex-column {
-        flex-direction: row;
-        overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
-        white-space: nowrap; /* Evita que los elementos del menú se apilen verticalmente */
-    }
-    .nav-link {
-        display: inline-block; /* Alinea los enlaces en una sola línea */
-    }
-}
-.btn-custom {
-    color: white; /* Cambia el color del texto a blanco */
-    border-color: #007bff; /* Puedes ajustar el color del borde si es necesario */
-}
-
-.btn-custom:hover, .btn-custom:focus {
-    color: white; /* Mantiene el color del texto en blanco al pasar el ratón y en foco */
-    background-color: #0056b3; /* Cambia el fondo para un mejor contraste al interactuar */
-    border-color: #0056b3; /* Ajusta el color del borde al interactuar */
-}
-.card.bg-transparent {
-    background-color: transparent !important; /* Importante para sobrescribir cualquier otra especificación de fondo */
-    border: none !important; /* Elimina cualquier borde que pueda tener la tarjeta */
-}
-
-.card-title, .card-text, .text-end a {
-    color: #0a0a0a; /* Ajusta el color del texto si es necesario, dependiendo del fondo de tu página */
-}
-
-.text-end a {
-    text-decoration: underline; /* Subraya el enlace para mayor visibilidad */
-}
-
-
 /* Stijlen voor grote schermen (PC's) - meer dan 1280px */
 @media (min-width: 1281px) {
-    /* Specifieke stijlen voor grote schermen, indien nodig */
+    .nav.flex-column {
+        flex-direction: column; /* Continúa con una disposición vertical en pantallas grandes */
+    }
+    .btn-custom {
+        display: block; /* Mantén los botones uno debajo del otro en pantallas grandes */
+    }/* Specifieke stijlen voor grote schermen, indien nodig */
   }
   
   /* Stijlen voor tablets en kleine desktops - tussen 769px en 1280px */
   @media (min-width: 769px) and (max-width: 1280px) {
     .nav.flex-column {
       flex-direction: column; /* Herstelt de verticale oriëntatie voor tablets */
+      
     }
   }
   
