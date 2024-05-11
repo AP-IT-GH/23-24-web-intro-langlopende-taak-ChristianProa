@@ -47,6 +47,11 @@ h1, h2, h3, h4, h5, h6 {
     display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+figcaption {
+  text-align: center; /* Para centrar el texto */
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
 ul {
     list-style-type: disc; /* Voegt zwarte bolletjes toe aan de lijst */
 }
