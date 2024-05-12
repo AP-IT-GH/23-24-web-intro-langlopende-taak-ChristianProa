@@ -77,7 +77,7 @@
                 <h1 class="col-display-2 text-center">Netwerkontwerp en Implementatie</h1>
                 <!-- Afbeelding en bijschrift -->
                 <figure class="text-center">
-                    <img src="/assests/images/implementatie.png" class="img-fluid" alt="Netwerkinfrastructuur">
+                    <img src="/assests/images/implementatie.png" class="img-fluid img-responsive" alt="Netwerkinfrastructuur">
                     <figcaption>Afbeelding: Complex netwerkontwerp</figcaption>
                 </figure>
                 <!-- Subtitel en beschrijving van de dienst -->
@@ -91,6 +91,7 @@
                     <li>Ondersteuning en onderhoud: Voortdurende ondersteuning om uw netwerk optimaal te laten functioneren.</li>
                 </ul>
                 <!-- Tabel met componenten van netwerkontwerp -->
+                <div class="table-responsive">
                 <table class="table">
                     <caption>Kerncomponenten van Netwerkontwerp</caption>
                     <thead>
@@ -123,37 +124,57 @@
                         </tr>
                     </tbody>
                 </table>
+                </div>
 
             </main>
       <!-- Sidebar met contactinformatie -->
-      <aside class="col-md-3 border-start ps-5">
-        <h2 class="text-uppercase fs-5 fw-bolder pt-3">Contact</h2>
-        <p>Protocollen<br>
-          email <a href="mailto:mail@protocollen.be">mail@protocollen.be</a><br>
-          phone +32 0486 / 86 27 41</p>
+      <aside class="col-md-3 border-start ps-md-5 pt-3">
+        <nav aria-label="Zijmenu">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active btn btn-outline-primary btn-custom mb-2" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="/diensten.html">Diensten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="beveiliging.html">Beveiligingsanalyse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="prestatie.html">Prestatieoptimalisatie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="netwerkontwerp.html">Ontwerp en implementatie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="cloud.html">Cloud Beheer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="ondersteuning.html">24/7 Ondersteuning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="iot.html">IoT Veiliging</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-outline-primary btn-custom" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <h2 class="text-uppercase fs-5 fw-bolder">Contact</h2>
+        <p>
+            email: <a href="mailto:mail@protocollen.be">mail@protocollen.be</a><br>
+            phone: +32 0486 / 86 27 41
+        </p>
         <ul class="list-inline socials">
-          <li class="list-inline-item">
-            <a href="https://www.youtube.com" target="_blank">
-              <i class="bi bi-youtube fs-3"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="bi bi-instagram fs-3"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com" target="_blank">
-              <i class="bi bi-facebook fs-3"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/" target="_blank">
-              <i class="bi bi-twitter fs-3"></i>
-            </a>
-          </li>
+            <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i the "bi bi-twitter fs-3"></i></a></li>
         </ul>
-      </aside>
+    </aside>
 
       </div>
     </div>
@@ -161,19 +182,7 @@
     <hr class="container">  
     
     <!-- Footer met navigatie -->
-    <footer class="container">
-        <section class="row justify-content-center">
-            <nav class="col-md-3 mb-3">
-            <h5 class="text-uppercase text-center">Website Map</h5>
-            <ul class="list-unstyled text-center">
-                <li><a href="#!">Home</a></li>
-                <li><a href="#!">Diensten</a></li>
-                <li><a href="#!">Protocollen</a></li>
-                <li><a href="#!">Contact</a></li>
-            </ul>
-            </nav>
-        </section>
-        </footer>
+    <footer class="container-fluid text-center h6 small p-4">Christian Proa&ntilde;o 23-24 Webtechnologie intro &copy; Netwerk Protocollen</footer>
     
 </body>
 </html>
