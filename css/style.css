@@ -1,34 +1,165 @@
-body {
-    font-family: 'Roboto', sans-serif;  /* Gebruikt het 'Roboto' lettertype voor de tekst in de body */
-    background-color: #A7BFE8;  /* Stelt een lichtblauwe achtergrondkleur in voor de body */
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    /* Gebruikt het 'Roboto' lettertype voor de tekst in de body */
+    background-color: #A7BFE8;
+    /* Stelt een lichtblauwe achtergrondkleur in voor de body */
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.navbar, footer {
-    background-color: #A7BFE8;  /* Stelt dezelfde lichtblauwe achtergrondkleur in voor de navigatiebalk en voettekst */
+.container,
+.navbar,
+header,
+footer {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.nav-link, .navbar-brand {
-    color: black;  /* Zet de tekstkleur van navigatielinks en het merklogo op zwart */
+.navbar,
+footer {
+    background-color: #A7BFE8;
+    /* Stelt dezelfde lichtblauwe achtergrondkleur in voor de navigatiebalk en voettekst */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #2B5876;  /* Stelt een donkerblauwe kleur in voor alle koppen (h1 tot h6) */
+.nav-link,
+.navbar-brand {
+    color: black;
+    /* Zet de tekstkleur van navigatielinks en het merklogo op zwart */
 }
 
-.btn, .navbar-toggler {
-    background-color: #2B5876;  /* Geeft knoppen en de navbar-toeschakelaar een donkerblauwe achtergrondkleur */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2B5876;
+    /* Stelt een donkerblauwe kleur in voor alle koppen (h1 tot h6) */
 }
-.img{
-    height: 100px; /* Stelt een hoogte van 100 pixels in voor afbeeldingen */
-    width: 100px; /* Stelt een breedte van 100 pixels in voor afbeeldingen */
+
+.col-display-2 {
+    margin-top: 30px;
+    /* Ajusta según la necesidad para mover el título hacia abajo */
+    margin-bottom: 50px;
+    /* Aumenta el espacio entre el título y la imagen de abajo */
 }
+
+/* Ajustes para el título h4 */
+.h4.text-center {
+    margin-top: 40px;
+    /* Espacio adicional arriba del título h4 */
+    margin-bottom: 40px;
+    /* Espacio adicional abajo del título h4 */
+}
+
+.btn,
+.navbar-toggler {
+    background-color: #2B5876;
+    /* Geeft knoppen en de navbar-toeschakelaar een donkerblauwe achtergrondkleur */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    max-width: 50%;
+    /* Asegura que la imagen nunca sobrepase el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Elimina cualquier espacio extra alrededor de la imagen */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+figcaption {
+    text-align: center;
+    /* Para centrar el texto */
+    margin-top: 10px;
+    /* Espacio entre la imagen y el texto */
+}
+
 ul {
-    list-style-type: disc; /* Voegt zwarte bolletjes toe aan de lijst */
+    list-style-type: disc;
+    /* Voegt zwarte bolletjes toe aan de lijst */
 }
-.table th, .table caption {
-    font-weight: bold; /* Maakt tekst in tabelkoppen en bijschrift vet */
+
+/* Establece un ancho máximo para la primera columna */
+.network-table th,
+.network-table caption {
+    font-weight: bold;
+    /* Maakt tekst in tabelkoppen en bijschrift vet */
 }
-.table td:first-child, .table th:first-child {
-    border-right: 1px solid #dee2e6; /* Voegt een lijn toe aan de rechterkant van de eerste kolom */
-    font-weight: bold; /* Maakt tekst in de eerste kolom vet */
+
+.network-table td:first-child,
+.network-table th:first-child {
+    border-right: 1px solid #dee2e6;
+    /* Voegt een lijn toe aan de rechterkant van de eerste kolom */
+    font-weight: bold;
+    /* Maakt tekst in de eerste kolom vet */
+}
+
+.table-responsive {
+    margin-bottom: 1.5rem;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+/* Stijlen voor grote schermen (PC's) - meer dan 1280px */
+@media (min-width: 1281px) {
+    .nav.flex-column {
+        flex-direction: column;
+        /* Continúa con una disposición vertical en pantallas grandes */
+    }
+
+    .btn-custom {
+        display: block;
+        /* Mantén los botones uno debajo del otro en pantallas grandes */
+    }
+
+    /* Specifieke stijlen voor grote schermen, indien nodig */
+}
+
+/* Stijlen voor tablets en kleine desktops - tussen 769px en 1280px */
+@media (min-width: 769px) and (max-width: 1280px) {
+    .nav.flex-column {
+        flex-direction: column;
+        /* Herstelt de verticale oriëntatie voor tablets */
+
+    }
+}
+
+/* Stijlen voor mobiele apparaten - tot 768px */
+@media (max-width: 768px) {
+    .nav.flex-column {
+        flex-direction: row;
+        overflow-x: auto;
+        /* Maakt horizontaal scrollen mogelijk */
+        white-space: nowrap;
+        /* Voorkomt dat menu-items verticaal gestapeld worden */
+    }
+
+    .nav-link {
+        display: inline-block;
+        /* Lijnt de links uit in één lijn */
+    }
+}
+
+/* Stijlen voor zeer kleine schermen - tot 390px */
+@media (max-width: 390px) {
+    .nav-link {
+        padding: 8px;
+        /* Vermindert de padding om zich aan te passen aan zeer kleine schermen */
+    }
 }
