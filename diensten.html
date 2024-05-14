@@ -1,114 +1,127 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diensten</title>
-    <!-- reset jouw css -->
-    <link href="./css/reset.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <!-- eigen geschreven css voor jouw html-bestand -->
-    <link href="/css/style.css" rel="stylesheet">
-    <!-- font roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-</head>
-<body>
-    <!-- Header sectie bevat navigatie -->
-    <header>
-        <nav class="navbar navbar-expand-md bg-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100" height="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="diensten.html">Diensten</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Protocollen
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="beveiliging.html">Beveiligingsanalyse</a></li>
-                      <li><a class="dropdown-item" href="prestatie.html">Prestatieoptimalisatie</a></li>
-                      <li><a class="dropdown-item" href="netwerkontwerp.html">Ontwerp en implementatie</a></li>
-                      <li><a class="dropdown-item" href="cloud.html">Cloud Beheer</a></li>
-                      <li><a class="dropdown-item" href="ondersteuning.html">24/7 Ondersteuning</a></li>
-                      <li><a class="dropdown-item" href="iot.html">IoT Veiliging</a></li>
-                    </ul>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                </ul>
-                
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-                <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
-            </form>
-            </div>
-            </div>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <div class="row">    
-            <main class="col-md-9 pe-3">
-                <h1 class="col-display-2 text-center">Netwerkprotocollen en Standaarden</h1>
 
-    <section class="row row-cols-1 row-cols-md-3 g-4">
-        <article class="col">
-          <section class="card h-100">
-            <img src="/assests/images/Network.png" class="card-img-top" alt="Netwerkbeveiligingsanalyse">
-            <article class="card-body ">
-              <h5 class="card-title">
-                <a href="/beveiliging.html">Beveiligingsanalyse</a></h5>
-              <p class="card-text">Bescherm uw netwerk tegen cyberaanvallen met onze netwerkbeveiligingsanalyse service.</p>
-            </article>
-          </section>
-        </article>
-      
-        <article class="col">
-          <section class="card h-100">
-            <img src="/assests/images/monitoring.jpg" class="card-img-top" alt="Netwerkprestatieoptimalisatie">
-            <article class="card-body">
-              <h5 class="card-title">
-                <a href="/prestatie.html">Prestatie en Optimalisatie</a></h5>
-              <p class="card-text">Optimaliseer de prestaties van uw netwerk en verhoog de productiviteit van uw gebruikers.</p>
-            </article>
-          </section>
-        </article>
-      
-        <article class="col">
-          <section class="card h-100">
-            <img src="/assests/images/implementatie.png" class="card-img-top" alt="Netwerkontwerp en Implementatie">
-            <article class="card-body">
-              <h5 class="card-title">
-                <a href="/netwerkontwerp.html">Ontwerp en Implementatie</a></h5>
-              <p class="card-text">Ontwerp en implementeer een netwerk dat voldoet aan uw specifieke behoeften.</p>
-            </article>
-          </section>
-        </article>
-        
-        <article class="col">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diensten</title>
+  <!-- reset jouw css -->
+  <link href="./css/reset.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  <!-- eigen geschreven css voor jouw html-bestand -->
+  <link href="/css/style.css" rel="stylesheet">
+  <!-- font roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+</head>
+
+<body>
+  <!-- Header sectie bevat navigatie -->
+  <header>
+    <nav class="navbar navbar-expand-md bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100"
+            height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="diensten.html">Diensten</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Protocollen
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="beveiliging.html">Beveiligingsanalyse</a></li>
+                <li><a class="dropdown-item" href="prestatie.html">Prestatieoptimalisatie</a></li>
+                <li><a class="dropdown-item" href="netwerkontwerp.html">Ontwerp en implementatie</a></li>
+                <li><a class="dropdown-item" href="cloud.html">Cloud Beheer</a></li>
+                <li><a class="dropdown-item" href="ondersteuning.html">24/7 Ondersteuning</a></li>
+                <li><a class="dropdown-item" href="iot.html">IoT Veiliging</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <h1 class="col-display-2 text-center">Netwerkprotocollen en Standaarden</h1>
+
+        <section class="row row-cols-1 row-cols-md-3 g-4">
+          <article class="col">
+            <section class="card h-100">
+              <img src="/assests/images/Network.png" class="card-img-top" alt="Netwerkbeveiligingsanalyse">
+              <article class="card-body ">
+                <h5 class="card-title">
+                  <a href="/beveiliging.html">Beveiligingsanalyse</a>
+                </h5>
+                <p class="card-text">Bescherm uw netwerk tegen cyberaanvallen met onze netwerkbeveiligingsanalyse
+                  service.</p>
+              </article>
+            </section>
+          </article>
+
+          <article class="col">
+            <section class="card h-100">
+              <img src="/assests/images/monitoring.jpg" class="card-img-top" alt="Netwerkprestatieoptimalisatie">
+              <article class="card-body">
+                <h5 class="card-title">
+                  <a href="/prestatie.html">Prestatie en Optimalisatie</a>
+                </h5>
+                <p class="card-text">Optimaliseer de prestaties van uw netwerk en verhoog de productiviteit van uw
+                  gebruikers.</p>
+              </article>
+            </section>
+          </article>
+
+          <article class="col">
+            <section class="card h-100">
+              <img src="/assests/images/implementatie.png" class="card-img-top" alt="Netwerkontwerp en Implementatie">
+              <article class="card-body">
+                <h5 class="card-title">
+                  <a href="/netwerkontwerp.html">Ontwerp en Implementatie</a>
+                </h5>
+                <p class="card-text">Ontwerp en implementeer een netwerk dat voldoet aan uw specifieke behoeften.</p>
+              </article>
+            </section>
+          </article>
+
+          <article class="col">
             <section class="card h-100">
               <img src="/assests/images/cloud.png" class="card-img-top" alt="Cloud-based netwerkbeheer">
               <article class="card-body">
                 <h5 class="card-title">
-                    <a href="/cloud.html">Cloud en Beheer</a></h5>
+                  <a href="/cloud.html">Cloud en Beheer</a>
+                </h5>
                 <p class="card-text">Beheer uw netwerk eenvoudig en efficiënt vanuit de cloud.</p>
               </article>
             </section>
@@ -119,80 +132,95 @@
               <img src="/assests/images/service.png" class="card-img-top" alt="24/7 Netwerkondersteuning">
               <article class="card-body">
                 <h5 class="card-title">
-                    <a href="/ondersteuning.html">24/7 Ondersteuning</a></h5>
-                <p class="card-text">Onze 24/7 netwerkondersteuningsdienst garandeert dat uw netwerk altijd up-and-running is, ongeacht het tijdstip of de dag.</p>
+                  <a href="/ondersteuning.html">24/7 Ondersteuning</a>
+                </h5>
+                <p class="card-text">Onze 24/7 netwerkondersteuningsdienst garandeert dat uw netwerk altijd
+                  up-and-running is, ongeacht het tijdstip of de dag.</p>
               </article>
             </section>
           </article>
-        
-        <article class="col">
-          <section class="card h-100">
-            <img src="/assests/images/iot.jpg" class="card-img-top" alt="IoT-Netwerkbeveiliging">
-            <article class="card-body">
-              <h5 class="card-title">
-                <a href="/iot.html">IoT eveiliging</a></h5>
-              <p class="card-text">Bescherm uw IoT-apparaten tegen cyberaanvallen met onze IoT-netwerkbeveiligingsdienst.</p>
-            </article>
-          </section>
-        </article>
-      </section>
+
+          <article class="col">
+            <section class="card h-100">
+              <img src="/assests/images/iot.jpg" class="card-img-top" alt="IoT-Netwerkbeveiliging">
+              <article class="card-body">
+                <h5 class="card-title">
+                  <a href="/iot.html">IoT eveiliging</a>
+                </h5>
+                <p class="card-text">Bescherm uw IoT-apparaten tegen cyberaanvallen met onze
+                  IoT-netwerkbeveiligingsdienst.</p>
+              </article>
+            </section>
+          </article>
+        </section>
       </main>
 
       <aside class="col-md-3 border-start ps-md-5 pt-3">
         <nav aria-label="Zijmenu">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active btn btn-outline-primary btn-custom mb-2" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="/diensten.html">Diensten</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="beveiliging.html">Beveiligingsanalyse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="prestatie.html">Prestatieoptimalisatie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="netwerkontwerp.html">Ontwerp en implementatie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="cloud.html">Cloud Beheer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="ondersteuning.html">24/7 Ondersteuning</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="iot.html">IoT Veiliging</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom" href="contact.html">Contact</a>
-                </li>
-            </ul>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active btn btn-outline-primary btn-custom mb-2" aria-current="page"
+                href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="/diensten.html">Diensten</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom mb-2"
+                href="beveiliging.html">Beveiligingsanalyse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom mb-2"
+                href="prestatie.html">Prestatieoptimalisatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="netwerkontwerp.html">Ontwerp en
+                implementatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="cloud.html">Cloud Beheer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="ondersteuning.html">24/7
+                Ondersteuning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="iot.html">IoT Veiliging</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-primary btn-custom" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </nav>
 
         <hr>
 
         <h2 class="text-uppercase fs-5 fw-bolder">Contact</h2>
         <p>
-            email: <a href="mailto:mail@protocollen.be">mail@protocollen.be</a><br>
-            phone: +32 0486 / 86 27 41
+          email: <a href="mailto:mail@protocollen.be">mail@protocollen.be</a><br>
+          phone: +32 0486 / 86 27 41
         </p>
         <ul class="list-inline socials">
-            <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a></li>
-            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i the "bi bi-twitter fs-3"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i
+                class="bi bi-youtube fs-3"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i
+                class="bi bi-instagram fs-3"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i
+                class="bi bi-facebook fs-3"></i></a></li>
+          <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i
+                the "bi bi-twitter fs-3"></i></a></li>
         </ul>
-    </aside>
+      </aside>
 
-      </div>
     </div>
-      
-    <hr class="container">  
-    
+  </div>
 
-    <footer class="container-fluid text-center h6 small p-4">Christian Proa&ntilde;o 23-24 Webtechnologie intro &copy; Netwerk Protocollen</footer>
-    
+  <hr class="container">
+
+
+  <footer class="container-fluid text-center h6 small p-4">Christian Proa&ntilde;o 23-24 Webtechnologie intro &copy;
+    Netwerk Protocollen</footer>
+
 </body>
+
 </html>

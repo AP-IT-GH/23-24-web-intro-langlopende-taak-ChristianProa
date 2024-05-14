@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <!-- reset jouw css -->
     <link href="./css/reset.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link href="/css/style.css" rel="stylesheet">
     <!-- Leaflet CSS -->
@@ -20,169 +24,199 @@
     <!-- font roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 </head>
+
 <body>
     <!-- Hoofd navigatiebalk -->
     <header>
         <nav class="navbar navbar-expand-md bg-light">
             <div class="container-fluid">
-            <!-- Logo en link naar de homepage -->
-            <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100" height="100">
-            </a>
-            <!-- Navigatie toggler voor mobiele apparaten -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navigatielinks -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="diensten.html">Diensten</a>
-                </li>
-                <!-- Dropdown menu voor meer opties -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Protocollen
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="beveiliging.html">Beveiligingsanalyse</a></li>
-                      <li><a class="dropdown-item" href="prestatie.html">Prestatieoptimalisatie</a></li>
-                      <li><a class="dropdown-item" href="netwerkontwerp.html">Ontwerp en implementatie</a></li>
-                      <li><a class="dropdown-item" href="cloud.html">Cloud Beheer</a></li>
-                      <li><a class="dropdown-item" href="ondersteuning.html">24/7 Ondersteuning</a></li>
-                      <li><a class="dropdown-item" href="iot.html">IoT Veiliging</a></li>
+                <!-- Logo en link naar de homepage -->
+                <a class="navbar-brand" href="#"><img src="/assests/icons/Logo.png" alt="Netwerkprotocollen" width="100"
+                        height="100">
+                </a>
+                <!-- Navigatie toggler voor mobiele apparaten -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navigatielinks -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="diensten.html">Diensten</a>
+                        </li>
+                        <!-- Dropdown menu voor meer opties -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Protocollen
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="beveiliging.html">Beveiligingsanalyse</a></li>
+                                <li><a class="dropdown-item" href="prestatie.html">Prestatieoptimalisatie</a></li>
+                                <li><a class="dropdown-item" href="netwerkontwerp.html">Ontwerp en implementatie</a>
+                                </li>
+                                <li><a class="dropdown-item" href="cloud.html">Cloud Beheer</a></li>
+                                <li><a class="dropdown-item" href="ondersteuning.html">24/7 Ondersteuning</a></li>
+                                <li><a class="dropdown-item" href="iot.html">IoT Veiliging</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                </ul>
-            <!-- Zoekbalk -->    
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-                <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
-            </form>
-            </div>
+                    <!-- Zoekbalk -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+                        <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
     <!-- Hoofdinhoud container -->
     <div class="container">
-        <div class="row">    
+        <div class="row">
             <main class="col-md-9 pe-3">
                 <!-- Sectietitel -->
                 <h1 class="col-display-2 text-center">Netwerkontwerp en Implementatie</h1>
                 <!-- Afbeelding en bijschrift -->
                 <figure class="text-center">
-                    <img src="/assests/images/implementatie.png" class="img-fluid img-responsive" alt="Netwerkinfrastructuur">
+                    <img src="/assests/images/implementatie.png" class="img-fluid img-responsive"
+                        alt="Netwerkinfrastructuur">
                     <figcaption>Afbeelding: Complex netwerkontwerp</figcaption>
                 </figure>
                 <!-- Subtitel en beschrijving van de dienst -->
                 <h2 class="h4 text-center">Op Maat Gemaakte Netwerkoplossingen voor Uw Bedrijf</h2>
-                <p>In het digitale tijdperk van vandaag is een robuust en efficiënt netwerk niet alleen een voordeel, maar een noodzaak voor bedrijven van elke omvang. Bij onze dienst voor netwerkontwerp en implementatie staat uw unieke bedrijfsbehoefte centraal. We beginnen met een diepgaand begrip van uw operationele vereisten om vervolgens een netwerkarchitectuur te ontwerpen die naadloos integreert met uw bedrijfsprocessen. Van de initiële planningsfase tot de volledige implementatie, ons doel is om een netwerk te creëren dat niet alleen aan uw huidige eisen voldoet maar ook schaalbaar is voor toekomstige groei.</p>
+                <p>In het digitale tijdperk van vandaag is een robuust en efficiënt netwerk niet alleen een voordeel,
+                    maar een noodzaak voor bedrijven van elke omvang. Bij onze dienst voor netwerkontwerp en
+                    implementatie staat uw unieke bedrijfsbehoefte centraal. We beginnen met een diepgaand begrip van uw
+                    operationele vereisten om vervolgens een netwerkarchitectuur te ontwerpen die naadloos integreert
+                    met uw bedrijfsprocessen. Van de initiële planningsfase tot de volledige implementatie, ons doel is
+                    om een netwerk te creëren dat niet alleen aan uw huidige eisen voldoet maar ook schaalbaar is voor
+                    toekomstige groei.</p>
                 <!-- Lijst van diensten -->
                 <ul>
-                    <li>Gepersonaliseerd netwerkontwerp: Aangepast aan de specifieke eisen en doelen van uw onderneming.</li>
-                    <li>Implementatie en configuratie: Professionele installatie en instelling van netwerkapparatuur en -software.</li>
-                    <li>Beveiligingsstrategieën: Integratie van geavanceerde beveiligingsmaatregelen om uw gegevens te beschermen.</li>
-                    <li>Ondersteuning en onderhoud: Voortdurende ondersteuning om uw netwerk optimaal te laten functioneren.</li>
+                    <li>Gepersonaliseerd netwerkontwerp: Aangepast aan de specifieke eisen en doelen van uw onderneming.
+                    </li>
+                    <li>Implementatie en configuratie: Professionele installatie en instelling van netwerkapparatuur en
+                        -software.</li>
+                    <li>Beveiligingsstrategieën: Integratie van geavanceerde beveiligingsmaatregelen om uw gegevens te
+                        beschermen.</li>
+                    <li>Ondersteuning en onderhoud: Voortdurende ondersteuning om uw netwerk optimaal te laten
+                        functioneren.</li>
                 </ul>
                 <!-- Tabel met componenten van netwerkontwerp -->
                 <div class="table-responsive">
-                <table class="table">
-                    <caption>Kerncomponenten van Netwerkontwerp</caption>
-                    <thead>
-                        <tr>
-                            <th>Component</th>
-                            <th>Beschrijving</th>
-                            <th>Belangrijkheid</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Router</td>
-                            <td>Verbindt netwerken en begeleidt dataverkeer</td>
-                            <td>Essentieel voor netwerktoegang en internetconnectiviteit</td>
-                        </tr>
-                        <tr>
-                            <td>Switch</td>
-                            <td>Verbindt apparaten binnen een netwerk</td>
-                            <td>Vergemakkelijkt communicatie en data-uitwisseling</td>
-                        </tr>
-                        <tr>
-                            <td>Firewall</td>
-                            <td>Beveiligt het netwerk door verkeer te controleren</td>
-                            <td>Beschermt tegen ongeautoriseerde toegang en cyberdreigingen</td>
-                        </tr>
-                        <tr>
-                            <td>Netwerkkabels</td>
-                            <td>Fysieke verbindingen tussen netwerkapparaten</td>
-                            <td>De ruggengraat van elke netwerkinfrastructuur</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <table class="table">
+                        <caption>Kerncomponenten van Netwerkontwerp</caption>
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Beschrijving</th>
+                                <th>Belangrijkheid</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Router</td>
+                                <td>Verbindt netwerken en begeleidt dataverkeer</td>
+                                <td>Essentieel voor netwerktoegang en internetconnectiviteit</td>
+                            </tr>
+                            <tr>
+                                <td>Switch</td>
+                                <td>Verbindt apparaten binnen een netwerk</td>
+                                <td>Vergemakkelijkt communicatie en data-uitwisseling</td>
+                            </tr>
+                            <tr>
+                                <td>Firewall</td>
+                                <td>Beveiligt het netwerk door verkeer te controleren</td>
+                                <td>Beschermt tegen ongeautoriseerde toegang en cyberdreigingen</td>
+                            </tr>
+                            <tr>
+                                <td>Netwerkkabels</td>
+                                <td>Fysieke verbindingen tussen netwerkapparaten</td>
+                                <td>De ruggengraat van elke netwerkinfrastructuur</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
             </main>
-      <!-- Sidebar met contactinformatie -->
-      <aside class="col-md-3 border-start ps-md-5 pt-3">
-        <nav aria-label="Zijmenu">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active btn btn-outline-primary btn-custom mb-2" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="/diensten.html">Diensten</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="beveiliging.html">Beveiligingsanalyse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="prestatie.html">Prestatieoptimalisatie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="netwerkontwerp.html">Ontwerp en implementatie</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="cloud.html">Cloud Beheer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="ondersteuning.html">24/7 Ondersteuning</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="iot.html">IoT Veiliging</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-primary btn-custom" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+            <!-- Sidebar met contactinformatie -->
+            <aside class="col-md-3 border-start ps-md-5 pt-3">
+                <nav aria-label="Zijmenu">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active btn btn-outline-primary btn-custom mb-2" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom mb-2"
+                                href="/diensten.html">Diensten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom mb-2"
+                                href="beveiliging.html">Beveiligingsanalyse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom mb-2"
+                                href="prestatie.html">Prestatieoptimalisatie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom mb-2"
+                                href="netwerkontwerp.html">Ontwerp en implementatie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="cloud.html">Cloud
+                                Beheer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="ondersteuning.html">24/7
+                                Ondersteuning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom mb-2" href="iot.html">IoT
+                                Veiliging</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-primary btn-custom" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <hr>
+                <hr>
 
-        <h2 class="text-uppercase fs-5 fw-bolder">Contact</h2>
-        <p>
-            email: <a href="mailto:mail@protocollen.be">mail@protocollen.be</a><br>
-            phone: +32 0486 / 86 27 41
-        </p>
-        <ul class="list-inline socials">
-            <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a></li>
-            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i the "bi bi-twitter fs-3"></i></a></li>
-        </ul>
-    </aside>
+                <h2 class="text-uppercase fs-5 fw-bolder">Contact</h2>
+                <p>
+                    email: <a href="mailto:mail@protocollen.be">mail@protocollen.be</a><br>
+                    phone: +32 0486 / 86 27 41
+                </p>
+                <ul class="list-inline socials">
+                    <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i
+                                class="bi bi-youtube fs-3"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i
+                                class="bi bi-instagram fs-3"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i
+                                class="bi bi-facebook fs-3"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i
+                                the "bi bi-twitter fs-3"></i></a></li>
+                </ul>
+            </aside>
 
-      </div>
+        </div>
     </div>
-      
-    <hr class="container">  
-    
+
+    <hr class="container">
+
     <!-- Footer met navigatie -->
-    <footer class="container-fluid text-center h6 small p-4">Christian Proa&ntilde;o 23-24 Webtechnologie intro &copy; Netwerk Protocollen</footer>
-    
+    <footer class="container-fluid text-center h6 small p-4">Christian Proa&ntilde;o 23-24 Webtechnologie intro &copy;
+        Netwerk Protocollen</footer>
+
 </body>
+
 </html>

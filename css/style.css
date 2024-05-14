@@ -1,143 +1,200 @@
-body, html{
-    font-family: 'Roboto', sans-serif;  /* Gebruikt het 'Roboto' lettertype voor de tekst in de body */
-    background-color: #A7BFE8;  /* Stelt een lichtblauwe achtergrondkleur in voor de body */
-    width: 100%;
-    overflow-x: hidden;
-}
-.container, .navbar, header, footer {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
-.navbar, footer {
-    background-color: #A7BFE8;  /* Stelt dezelfde lichtblauwe achtergrondkleur in voor de navigatiebalk en voettekst */
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  /* Gebruikt het 'Roboto' lettertype voor de tekst in de body */
+  background-color: #a7bfe8;
+  /* Stelt een lichtblauwe achtergrondkleur in voor de body */
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.nav-link, .navbar-brand {
-    color: black;  /* Zet de tekstkleur van navigatielinks en het merklogo op zwart */
+.container,
+.navbar,
+header,
+footer {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #2B5876;  /* Stelt een donkerblauwe kleur in voor alle koppen (h1 tot h6) */
+.navbar,
+footer {
+  background-color: #a7bfe8;
+  /* Stelt dezelfde lichtblauwe achtergrondkleur in voor de navigatiebalk en voettekst */
 }
+
+.nav-link,
+.navbar-brand {
+  color: black;
+  /* Zet de tekstkleur van navigatielinks en het merklogo op zwart */
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #2b5876;
+  /* Stelt een donkerblauwe kleur in voor alle koppen (h1 tot h6) */
+}
+
 .col-display-2 {
-    margin-top: 30px; /* Ajusta según la necesidad para mover el título hacia abajo */
-    margin-bottom: 50px; /* Aumenta el espacio entre el título y la imagen de abajo */
+  margin-top: 30px;
+  /* Ajusta según la necesidad para mover el título hacia abajo */
+  margin-bottom: 50px;
+  /* Aumenta el espacio entre el título y la imagen de abajo */
 }
+
 /* Ajustes para el título h4 */
 .h4.text-center {
-    margin-top: 40px; /* Espacio adicional arriba del título h4 */
-    margin-bottom: 40px; /* Espacio adicional abajo del título h4 */
+  margin-top: 40px;
+  /* Espacio adicional arriba del título h4 */
+  margin-bottom: 40px;
+  /* Espacio adicional abajo del título h4 */
 }
 
-.btn, .navbar-toggler {
-    background-color: #2B5876;  /* Geeft knoppen en de navbar-toeschakelaar een donkerblauwe achtergrondkleur */
+.btn,
+.navbar-toggler {
+  background-color: #2b5876;
+  /* Geeft knoppen en de navbar-toeschakelaar een donkerblauwe achtergrondkleur */
 }
+
 .img-fluid {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 .img-responsive {
-    max-width: 50%; /* Asegura que la imagen nunca sobrepase el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina cualquier espacio extra alrededor de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 50%;
+  /* Asegura que la imagen nunca sobrepase el ancho del contenedor */
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  display: block;
+  /* Elimina cualquier espacio extra alrededor de la imagen */
+  margin: 0 auto;
+  /* Centra la imagen horizontalmente */
 }
+
 figcaption {
-  text-align: center; /* Para centrar el texto */
-  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  text-align: center;
+  /* Para centrar el texto */
+  margin-top: 10px;
+  /* Espacio entre la imagen y el texto */
 }
-.card-title, .card-header, figcaption {
-  font-weight: bold; /* Aplica negrita */
+
+.card-title,
+.card-header,
+figcaption {
+  font-weight: bold;
+  /* Aplica negrita */
 }
+
 ul {
-    list-style-type: disc; /* Voegt zwarte bolletjes toe aan de lijst */
+  list-style-type: disc;
+  /* Voegt zwarte bolletjes toe aan de lijst */
 }
+
 /* Establece un ancho máximo para la primera columna */
-.network-table th, .network-table caption {
-    font-weight: bold; /* Maakt tekst in tabelkoppen en bijschrift vet */
+.network-table th,
+.network-table caption {
+  font-weight: bold;
+  /* Maakt tekst in tabelkoppen en bijschrift vet */
 }
-.network-table td:first-child, .network-table th:first-child {
-    border-right: 1px solid #dee2e6; /* Voegt een lijn toe aan de rechterkant van de eerste kolom */
-    font-weight: bold; /* Maakt tekst in de eerste kolom vet */
+
+.network-table td:first-child,
+.network-table th:first-child {
+  border-right: 1px solid #dee2e6;
+  /* Voegt een lijn toe aan de rechterkant van de eerste kolom */
+  font-weight: bold;
+  /* Maakt tekst in de eerste kolom vet */
 }
+
 .table-responsive {
-    margin-bottom: 1.5rem;
-  }
+  margin-bottom: 1.5rem;
+}
+
 /* Estilos generales para todas las tablas */
 .table {
-  border-collapse: collapse; /* Asegura que los bordes de las celdas estén juntos */
-  width: 100%; /* Ajusta la tabla al ancho del contenedor */
+  border-collapse: collapse;
+  /* Asegura que los bordes de las celdas estén juntos */
+  width: 100%;
+  /* Ajusta la tabla al ancho del contenedor */
 }
 
 /* Estilos para la primera fila y la primera columna */
 .table th,
 .table td:first-child {
-  font-weight: bold; /* Aplica negrita a la primera fila y la primera columna */
+  font-weight: bold;
+  /* Aplica negrita a la primera fila y la primera columna */
 }
 
 /* Estilos para las líneas separadoras */
 .table th,
 .table td {
-  border: 1px solid #dee2e6; /* Añade bordes a las celdas de la tabla */
-  padding: 8px; /* Añade un poco de espacio dentro de cada celda */
-  text-align: left; /* Alinea el texto a la izquierda */
+  border: 1px solid #dee2e6;
+  /* Añade bordes a las celdas de la tabla */
+  padding: 8px;
+  /* Añade un poco de espacio dentro de cada celda */
+  text-align: left;
+  /* Alinea el texto a la izquierda */
 }
 
 /* Estilos para la cabecera de la tabla */
 .table thead th {
-  background-color: #f8f9fa; /* Color de fondo para la cabecera de la tabla */
-  color: #495057; /* Color de texto para la cabecera de la tabla */
+  background-color: #f8f9fa;
+  /* Color de fondo para la cabecera de la tabla */
+  color: #495057;
+  /* Color de texto para la cabecera de la tabla */
 }
 
-
-
-
-
-  iframe {
-    width: 100%;
-    border: none;
-  }
+iframe {
+  width: 100%;
+  border: none;
+}
 
 /* Stijlen voor grote schermen (PC's) - meer dan 1280px */
 @media (min-width: 1281px) {
-    .nav.flex-column {
-        flex-direction: column; /* Continúa con una disposición vertical en pantallas grandes */
-    }
-    .btn-custom {
-        display: block; /* Mantén los botones uno debajo del otro en pantallas grandes */
-    }/* Specifieke stijlen voor grote schermen, indien nodig */
+  .nav.flex-column {
+    flex-direction: column;
+    /* Continúa con una disposición vertical en pantallas grandes */
   }
-  
-  /* Stijlen voor tablets en kleine desktops - tussen 769px en 1280px */
-  @media (min-width: 769px) and (max-width: 1280px) {
-    .nav.flex-column {
-      flex-direction: column; /* Herstelt de verticale oriëntatie voor tablets */
-      
-    }
+
+  .btn-custom {
+    display: block;
+    /* Mantén los botones uno debajo del otro en pantallas grandes */
   }
-  
-  /* Stijlen voor mobiele apparaten - tot 768px */
-  @media (max-width: 768px) {
-    .nav.flex-column {
-      flex-direction: row;
-      overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
-      white-space: nowrap; /* Voorkomt dat menu-items verticaal gestapeld worden */
-    }
-    .nav-link {
-      display: inline-block; /* Lijnt de links uit in één lijn */
-    }
+
+  /* Specifieke stijlen voor grote schermen, indien nodig */
+}
+
+/* Stijlen voor tablets en kleine desktops - tussen 769px en 1280px */
+@media (min-width: 769px) and (max-width: 1280px) {
+  .nav.flex-column {
+    flex-direction: column;
+    /* Herstelt de verticale oriëntatie voor tablets */
   }
-  
-  /* Stijlen voor zeer kleine schermen - tot 390px */
-  @media (max-width: 390px) {
-    .nav-link {
-      padding: 8px; /* Vermindert de padding om zich aan te passen aan zeer kleine schermen */
-    }
+}
+
+/* Stijlen voor mobiele apparaten - tot 768px */
+@media (max-width: 768px) {
+  .nav.flex-column {
+    flex-direction: row;
+    overflow-x: auto;
+    /* Maakt horizontaal scrollen mogelijk */
+    white-space: nowrap;
+    /* Voorkomt dat menu-items verticaal gestapeld worden */
   }
-  
-  
+
+  .nav-link {
+    display: inline-block;
+    /* Lijnt de links uit in één lijn */
+  }
+}
+
+/* Stijlen voor zeer kleine schermen - tot 390px */
+@media (max-width: 390px) {
+  .nav-link {
+    padding: 8px;
+    /* Vermindert de padding om zich aan te passen aan zeer kleine schermen */
+  }
+}
